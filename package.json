@@ -1,6 +1,9 @@
 {
   "name": "kinect",
   "version": "1.0.0",
+  "engine": {
+    "node": "16.18.0"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
