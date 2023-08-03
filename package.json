@@ -1,8 +1,9 @@
 {
   "name": "kinect",
   "version": "1.0.0",
-  "engine": {
-    "node": "16.18.0"
+  "engines": {
+    "node": "16.18.0",
+    "npm": "latest"
   },
   "description": "",
   "main": "index.js",
@@ -11,6 +12,7 @@
     "start": "nodemon --watch server --exec node server/index.js",
     "server": "nodemon server/index.js",
     "client": "npm start --prefix client",
+    "build": "npm run build --prefix client",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --force --prefix client && npm run build --client"
   },
   "repository": {
